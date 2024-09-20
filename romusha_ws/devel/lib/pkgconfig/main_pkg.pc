@@ -1,0 +1,8 @@
+prefix=/home/ichbinwil/romusha_ws/devel
+
+Name: main_pkg
+Description: Description of main_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

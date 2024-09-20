@@ -1,0 +1,8 @@
+prefix=/home/ichbinwil/romusha_ws/devel
+
+Name: msg_pkg
+Description: Description of msg_pkg
+Version: 0.0.0
+Cflags: -I/home/ichbinwil/romusha_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: 

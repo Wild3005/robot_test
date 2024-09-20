@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/main_pkg_node.dir/src/main_node/controller.cpp.o CMakeFiles/main_pkg_node.dir/src/node_serial/serial.cpp.o  -o /home/ichbinwil/romusha_ws/devel/lib/main_pkg/main_pkg_node 
