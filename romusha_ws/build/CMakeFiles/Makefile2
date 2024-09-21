@@ -139,7 +139,8 @@ gtest/googletest/clean: gtest/googletest/CMakeFiles/gtest.dir/clean
 # Directory level rules for directory main_pkg
 
 # Recursive "all" directory target.
-main_pkg/all: main_pkg/CMakeFiles/main_pkg_node.dir/all
+main_pkg/all: main_pkg/CMakeFiles/node_serial.dir/all
+main_pkg/all: main_pkg/CMakeFiles/main_node.dir/all
 
 .PHONY : main_pkg/all
 
@@ -149,7 +150,13 @@ main_pkg/preinstall:
 .PHONY : main_pkg/preinstall
 
 # Recursive "clean" directory target.
-main_pkg/clean: main_pkg/CMakeFiles/main_pkg_node.dir/clean
+main_pkg/clean: main_pkg/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
+main_pkg/clean: main_pkg/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
+main_pkg/clean: main_pkg/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
+main_pkg/clean: main_pkg/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
+main_pkg/clean: main_pkg/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
+main_pkg/clean: main_pkg/CMakeFiles/node_serial.dir/clean
+main_pkg/clean: main_pkg/CMakeFiles/main_node.dir/clean
 
 .PHONY : main_pkg/clean
 
@@ -482,7 +489,7 @@ msg_pkg/CMakeFiles/msg_pkg_generate_messages_py.dir/all: msg_pkg/CMakeFiles/_msg
 msg_pkg/CMakeFiles/msg_pkg_generate_messages_py.dir/all: msg_pkg/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
 	$(MAKE) -f msg_pkg/CMakeFiles/msg_pkg_generate_messages_py.dir/build.make msg_pkg/CMakeFiles/msg_pkg_generate_messages_py.dir/depend
 	$(MAKE) -f msg_pkg/CMakeFiles/msg_pkg_generate_messages_py.dir/build.make msg_pkg/CMakeFiles/msg_pkg_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ichbinwil/romusha_ws/build/CMakeFiles --progress-num=17,18 "Built target msg_pkg_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ichbinwil/romusha_ws/build/CMakeFiles --progress-num=16,17 "Built target msg_pkg_generate_messages_py"
 .PHONY : msg_pkg/CMakeFiles/msg_pkg_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
@@ -727,7 +734,7 @@ msg_pkg/CMakeFiles/msg_pkg_generate_messages_eus.dir/all: msg_pkg/CMakeFiles/_ms
 msg_pkg/CMakeFiles/msg_pkg_generate_messages_eus.dir/all: msg_pkg/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
 	$(MAKE) -f msg_pkg/CMakeFiles/msg_pkg_generate_messages_eus.dir/build.make msg_pkg/CMakeFiles/msg_pkg_generate_messages_eus.dir/depend
 	$(MAKE) -f msg_pkg/CMakeFiles/msg_pkg_generate_messages_eus.dir/build.make msg_pkg/CMakeFiles/msg_pkg_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ichbinwil/romusha_ws/build/CMakeFiles --progress-num=13,14 "Built target msg_pkg_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ichbinwil/romusha_ws/build/CMakeFiles --progress-num=12,13 "Built target msg_pkg_generate_messages_eus"
 .PHONY : msg_pkg/CMakeFiles/msg_pkg_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
@@ -918,7 +925,7 @@ msg_pkg/CMakeFiles/msg_pkg_generate_messages_cpp.dir/all: msg_pkg/CMakeFiles/_ms
 msg_pkg/CMakeFiles/msg_pkg_generate_messages_cpp.dir/all: msg_pkg/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 	$(MAKE) -f msg_pkg/CMakeFiles/msg_pkg_generate_messages_cpp.dir/build.make msg_pkg/CMakeFiles/msg_pkg_generate_messages_cpp.dir/depend
 	$(MAKE) -f msg_pkg/CMakeFiles/msg_pkg_generate_messages_cpp.dir/build.make msg_pkg/CMakeFiles/msg_pkg_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ichbinwil/romusha_ws/build/CMakeFiles --progress-num=12 "Built target msg_pkg_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ichbinwil/romusha_ws/build/CMakeFiles --progress-num=11 "Built target msg_pkg_generate_messages_cpp"
 .PHONY : msg_pkg/CMakeFiles/msg_pkg_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1248,7 +1255,7 @@ msg_pkg/CMakeFiles/msg_pkg_generate_messages_lisp.dir/all: msg_pkg/CMakeFiles/ge
 msg_pkg/CMakeFiles/msg_pkg_generate_messages_lisp.dir/all: msg_pkg/CMakeFiles/_msg_pkg_generate_messages_check_deps_Controller.dir/all
 	$(MAKE) -f msg_pkg/CMakeFiles/msg_pkg_generate_messages_lisp.dir/build.make msg_pkg/CMakeFiles/msg_pkg_generate_messages_lisp.dir/depend
 	$(MAKE) -f msg_pkg/CMakeFiles/msg_pkg_generate_messages_lisp.dir/build.make msg_pkg/CMakeFiles/msg_pkg_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ichbinwil/romusha_ws/build/CMakeFiles --progress-num=15 "Built target msg_pkg_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ichbinwil/romusha_ws/build/CMakeFiles --progress-num=14 "Built target msg_pkg_generate_messages_lisp"
 .PHONY : msg_pkg/CMakeFiles/msg_pkg_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1277,7 +1284,7 @@ msg_pkg/CMakeFiles/msg_pkg_generate_messages_nodejs.dir/all: msg_pkg/CMakeFiles/
 msg_pkg/CMakeFiles/msg_pkg_generate_messages_nodejs.dir/all: msg_pkg/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
 	$(MAKE) -f msg_pkg/CMakeFiles/msg_pkg_generate_messages_nodejs.dir/build.make msg_pkg/CMakeFiles/msg_pkg_generate_messages_nodejs.dir/depend
 	$(MAKE) -f msg_pkg/CMakeFiles/msg_pkg_generate_messages_nodejs.dir/build.make msg_pkg/CMakeFiles/msg_pkg_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ichbinwil/romusha_ws/build/CMakeFiles --progress-num=16 "Built target msg_pkg_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ichbinwil/romusha_ws/build/CMakeFiles --progress-num=15 "Built target msg_pkg_generate_messages_nodejs"
 .PHONY : msg_pkg/CMakeFiles/msg_pkg_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1325,31 +1332,193 @@ msg_pkg/CMakeFiles/msg_pkg_genlisp.dir/clean:
 .PHONY : msg_pkg/CMakeFiles/msg_pkg_genlisp.dir/clean
 
 #=============================================================================
-# Target rules for target main_pkg/CMakeFiles/main_pkg_node.dir
+# Target rules for target main_pkg/CMakeFiles/sensor_msgs_generate_messages_cpp.dir
 
 # All Build rule for target.
-main_pkg/CMakeFiles/main_pkg_node.dir/all:
-	$(MAKE) -f main_pkg/CMakeFiles/main_pkg_node.dir/build.make main_pkg/CMakeFiles/main_pkg_node.dir/depend
-	$(MAKE) -f main_pkg/CMakeFiles/main_pkg_node.dir/build.make main_pkg/CMakeFiles/main_pkg_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ichbinwil/romusha_ws/build/CMakeFiles --progress-num=9,10,11 "Built target main_pkg_node"
-.PHONY : main_pkg/CMakeFiles/main_pkg_node.dir/all
+main_pkg/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f main_pkg/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make main_pkg/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f main_pkg/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make main_pkg/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ichbinwil/romusha_ws/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_cpp"
+.PHONY : main_pkg/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-main_pkg/CMakeFiles/main_pkg_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ichbinwil/romusha_ws/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 main_pkg/CMakeFiles/main_pkg_node.dir/all
+main_pkg/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ichbinwil/romusha_ws/build/CMakeFiles 0
-.PHONY : main_pkg/CMakeFiles/main_pkg_node.dir/rule
+	$(MAKE) -f CMakeFiles/Makefile2 main_pkg/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ichbinwil/romusha_ws/build/CMakeFiles 0
+.PHONY : main_pkg/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-main_pkg_node: main_pkg/CMakeFiles/main_pkg_node.dir/rule
+sensor_msgs_generate_messages_cpp: main_pkg/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 
-.PHONY : main_pkg_node
+.PHONY : sensor_msgs_generate_messages_cpp
 
 # clean rule for target.
-main_pkg/CMakeFiles/main_pkg_node.dir/clean:
-	$(MAKE) -f main_pkg/CMakeFiles/main_pkg_node.dir/build.make main_pkg/CMakeFiles/main_pkg_node.dir/clean
-.PHONY : main_pkg/CMakeFiles/main_pkg_node.dir/clean
+main_pkg/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f main_pkg/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make main_pkg/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
+.PHONY : main_pkg/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target main_pkg/CMakeFiles/sensor_msgs_generate_messages_eus.dir
+
+# All Build rule for target.
+main_pkg/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f main_pkg/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make main_pkg/CMakeFiles/sensor_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f main_pkg/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make main_pkg/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ichbinwil/romusha_ws/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_eus"
+.PHONY : main_pkg/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+main_pkg/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ichbinwil/romusha_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 main_pkg/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ichbinwil/romusha_ws/build/CMakeFiles 0
+.PHONY : main_pkg/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_eus: main_pkg/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_eus
+
+# clean rule for target.
+main_pkg/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f main_pkg/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make main_pkg/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
+.PHONY : main_pkg/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target main_pkg/CMakeFiles/sensor_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+main_pkg/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f main_pkg/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make main_pkg/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f main_pkg/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make main_pkg/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ichbinwil/romusha_ws/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_lisp"
+.PHONY : main_pkg/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+main_pkg/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ichbinwil/romusha_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 main_pkg/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ichbinwil/romusha_ws/build/CMakeFiles 0
+.PHONY : main_pkg/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_lisp: main_pkg/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_lisp
+
+# clean rule for target.
+main_pkg/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f main_pkg/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make main_pkg/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
+.PHONY : main_pkg/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target main_pkg/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir
+
+# All Build rule for target.
+main_pkg/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f main_pkg/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make main_pkg/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f main_pkg/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make main_pkg/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ichbinwil/romusha_ws/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_nodejs"
+.PHONY : main_pkg/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+main_pkg/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ichbinwil/romusha_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 main_pkg/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ichbinwil/romusha_ws/build/CMakeFiles 0
+.PHONY : main_pkg/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_nodejs: main_pkg/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_nodejs
+
+# clean rule for target.
+main_pkg/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f main_pkg/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make main_pkg/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
+.PHONY : main_pkg/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target main_pkg/CMakeFiles/sensor_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+main_pkg/CMakeFiles/sensor_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f main_pkg/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make main_pkg/CMakeFiles/sensor_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f main_pkg/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make main_pkg/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ichbinwil/romusha_ws/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_py"
+.PHONY : main_pkg/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+main_pkg/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ichbinwil/romusha_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 main_pkg/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ichbinwil/romusha_ws/build/CMakeFiles 0
+.PHONY : main_pkg/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_py: main_pkg/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_py
+
+# clean rule for target.
+main_pkg/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f main_pkg/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make main_pkg/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
+.PHONY : main_pkg/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target main_pkg/CMakeFiles/node_serial.dir
+
+# All Build rule for target.
+main_pkg/CMakeFiles/node_serial.dir/all: msg_pkg/CMakeFiles/msg_pkg_generate_messages_cpp.dir/all
+	$(MAKE) -f main_pkg/CMakeFiles/node_serial.dir/build.make main_pkg/CMakeFiles/node_serial.dir/depend
+	$(MAKE) -f main_pkg/CMakeFiles/node_serial.dir/build.make main_pkg/CMakeFiles/node_serial.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ichbinwil/romusha_ws/build/CMakeFiles --progress-num=18,19 "Built target node_serial"
+.PHONY : main_pkg/CMakeFiles/node_serial.dir/all
+
+# Build rule for subdir invocation for target.
+main_pkg/CMakeFiles/node_serial.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ichbinwil/romusha_ws/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 main_pkg/CMakeFiles/node_serial.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ichbinwil/romusha_ws/build/CMakeFiles 0
+.PHONY : main_pkg/CMakeFiles/node_serial.dir/rule
+
+# Convenience name for target.
+node_serial: main_pkg/CMakeFiles/node_serial.dir/rule
+
+.PHONY : node_serial
+
+# clean rule for target.
+main_pkg/CMakeFiles/node_serial.dir/clean:
+	$(MAKE) -f main_pkg/CMakeFiles/node_serial.dir/build.make main_pkg/CMakeFiles/node_serial.dir/clean
+.PHONY : main_pkg/CMakeFiles/node_serial.dir/clean
+
+#=============================================================================
+# Target rules for target main_pkg/CMakeFiles/main_node.dir
+
+# All Build rule for target.
+main_pkg/CMakeFiles/main_node.dir/all: msg_pkg/CMakeFiles/msg_pkg_generate_messages_cpp.dir/all
+	$(MAKE) -f main_pkg/CMakeFiles/main_node.dir/build.make main_pkg/CMakeFiles/main_node.dir/depend
+	$(MAKE) -f main_pkg/CMakeFiles/main_node.dir/build.make main_pkg/CMakeFiles/main_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ichbinwil/romusha_ws/build/CMakeFiles --progress-num=9,10 "Built target main_node"
+.PHONY : main_pkg/CMakeFiles/main_node.dir/all
+
+# Build rule for subdir invocation for target.
+main_pkg/CMakeFiles/main_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ichbinwil/romusha_ws/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 main_pkg/CMakeFiles/main_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ichbinwil/romusha_ws/build/CMakeFiles 0
+.PHONY : main_pkg/CMakeFiles/main_node.dir/rule
+
+# Convenience name for target.
+main_node: main_pkg/CMakeFiles/main_node.dir/rule
+
+.PHONY : main_node
+
+# clean rule for target.
+main_pkg/CMakeFiles/main_node.dir/clean:
+	$(MAKE) -f main_pkg/CMakeFiles/main_node.dir/build.make main_pkg/CMakeFiles/main_node.dir/clean
+.PHONY : main_pkg/CMakeFiles/main_node.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

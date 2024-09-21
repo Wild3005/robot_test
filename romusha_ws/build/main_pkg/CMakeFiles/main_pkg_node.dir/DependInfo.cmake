@@ -5,7 +5,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ichbinwil/romusha_ws/src/main_pkg/src/main_node/controller.cpp" "/home/ichbinwil/romusha_ws/build/main_pkg/CMakeFiles/main_pkg_node.dir/src/main_node/controller.cpp.o"
-  "/home/ichbinwil/romusha_ws/src/main_pkg/src/node_serial/serial.cpp" "/home/ichbinwil/romusha_ws/build/main_pkg/CMakeFiles/main_pkg_node.dir/src/node_serial/serial.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

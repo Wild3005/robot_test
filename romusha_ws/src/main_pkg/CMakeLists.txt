@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.0.2)
 project(main_pkg)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
-# add_compile_options(-std=c++11)
+add_compile_options(-std=c++11)
 
 ## Find catkin macros and libraries
 find_path(LIBUSBP_INCLUDE_DIR
@@ -14,6 +14,9 @@ find_library(LIBUSBP_LIBRARY
 message(STATUS "LIBUSBP_INCLUDE_DIR: ${LIBUSBP_INCLUDE_DIR}")
 
 find_package(catkin REQUIRED COMPONENTS
+  cmake_modules
+  geometry_msgs
+  sensor_msgs
   roscpp
   roslib
   std_msgs
@@ -25,13 +28,21 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
+catkin_package(
+  CATKIN_DEPENDS roscpp std_msgs msg_pkg
+)
+
 ###########
 ## Build ##
 ###########
 
 ## Declare a C++ executable
-add_executable(${PROJECT_NAME}_node src/main_node/controller.cpp)
+add_executable(main_node src/main_node/controller.cpp)
 add_executable(node_serial src/node_serial/serial.cpp)
+
+include_directories (
+  "${CMAKE_SOURCE_DIR}/include"
+)
 
 ## Specify additional locations of header files
 target_include_directories(node_serial PRIVATE
@@ -45,9 +56,14 @@ target_link_libraries(node_serial PRIVATE
   ${LIBUSBP_LIBRARY}
 )
 
-## Add dependencies
-add_dependencies(node_serial ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(main_node 
+${catkin_LIBRARIES}
+${roslib_LIBRARIES}
+)
 
+## Add dependencies
+add_dependencies(main_node msg_pkg_generate_messages_cpp)
+add_dependencies(node_serial msg_pkg_generate_messages_cpp)
 ## Mark executables for installation
 # install(TARGETS ${PROJECT_NAME}_node node_serial
 #   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}

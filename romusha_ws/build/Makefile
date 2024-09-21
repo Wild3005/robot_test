@@ -701,17 +701,95 @@ msg_pkg_genlisp/fast:
 .PHONY : msg_pkg_genlisp/fast
 
 #=============================================================================
-# Target rules for targets named main_pkg_node
+# Target rules for targets named sensor_msgs_generate_messages_cpp
 
 # Build rule for target.
-main_pkg_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 main_pkg_node
-.PHONY : main_pkg_node
+sensor_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_cpp
+.PHONY : sensor_msgs_generate_messages_cpp
 
 # fast build rule for target.
-main_pkg_node/fast:
-	$(MAKE) -f main_pkg/CMakeFiles/main_pkg_node.dir/build.make main_pkg/CMakeFiles/main_pkg_node.dir/build
-.PHONY : main_pkg_node/fast
+sensor_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f main_pkg/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make main_pkg/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+.PHONY : sensor_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_eus
+
+# Build rule for target.
+sensor_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_eus
+.PHONY : sensor_msgs_generate_messages_eus
+
+# fast build rule for target.
+sensor_msgs_generate_messages_eus/fast:
+	$(MAKE) -f main_pkg/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make main_pkg/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+.PHONY : sensor_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_lisp
+
+# Build rule for target.
+sensor_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_lisp
+.PHONY : sensor_msgs_generate_messages_lisp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f main_pkg/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make main_pkg/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+.PHONY : sensor_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_nodejs
+
+# Build rule for target.
+sensor_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_nodejs
+.PHONY : sensor_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+sensor_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f main_pkg/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make main_pkg/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+.PHONY : sensor_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_py
+
+# Build rule for target.
+sensor_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_py
+.PHONY : sensor_msgs_generate_messages_py
+
+# fast build rule for target.
+sensor_msgs_generate_messages_py/fast:
+	$(MAKE) -f main_pkg/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make main_pkg/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+.PHONY : sensor_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named node_serial
+
+# Build rule for target.
+node_serial: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 node_serial
+.PHONY : node_serial
+
+# fast build rule for target.
+node_serial/fast:
+	$(MAKE) -f main_pkg/CMakeFiles/node_serial.dir/build.make main_pkg/CMakeFiles/node_serial.dir/build
+.PHONY : node_serial/fast
+
+#=============================================================================
+# Target rules for targets named main_node
+
+# Build rule for target.
+main_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main_node
+.PHONY : main_node
+
+# fast build rule for target.
+main_node/fast:
+	$(MAKE) -f main_pkg/CMakeFiles/main_node.dir/build.make main_pkg/CMakeFiles/main_node.dir/build
+.PHONY : main_node/fast
 
 # Help Target
 help:
@@ -767,7 +845,13 @@ help:
 	@echo "... msg_pkg_generate_messages_lisp"
 	@echo "... msg_pkg_generate_messages_nodejs"
 	@echo "... msg_pkg_genlisp"
-	@echo "... main_pkg_node"
+	@echo "... sensor_msgs_generate_messages_cpp"
+	@echo "... sensor_msgs_generate_messages_eus"
+	@echo "... sensor_msgs_generate_messages_lisp"
+	@echo "... sensor_msgs_generate_messages_nodejs"
+	@echo "... sensor_msgs_generate_messages_py"
+	@echo "... node_serial"
+	@echo "... main_node"
 .PHONY : help
 
 

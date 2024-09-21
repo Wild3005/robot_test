@@ -84,7 +84,7 @@ void node_callback(const sensor_msgs::Joy::ConstPtr& msg)
     jb.buttons[PS] = msg->buttons[12];
 
     geometry_msgs::Twist cmd_vel;
-    rody1_messages::Controller Controller_msg;
+    msg_pkg::Controller Controller_msg;
     // cmd_vel.linear.x = jb.axes[XL] * max_linear_speed;  // Forward/backward motion
     // cmd_vel.linear.y = jb.axes[YL] * max_linear_speed;  // right/left motion
     // cmd_vel.angular.z = jb.axes[XR] * max_angular_speed;  // rotation
@@ -121,7 +121,7 @@ int main(int argc, char **argv)
     start_time = ros::Time::now();
     // ros::Timer timer = nh.createTimer(ros::Duration(0.01), robot_task);
 
-    pub_controller = nh.advertise<rody1_messages::Controller>("Controller", 10);
+    pub_controller = nh.advertise<msg_pkg::Controller>("Controller", 10);
     ros::Subscriber sub1 = nh.subscribe<sensor_msgs::Joy>("joy", 10,node_callback);
 
     ros::MultiThreadedSpinner spinner(4);
