@@ -57,6 +57,7 @@ ros::Publisher pub_controller;
 float max_linear_speed = 1.0;  // Max linear speed in m/s
 float max_angular_speed = 1.0; // Max angular speed in rad/s
 double map = 0.5;
+
 void node_callback(const sensor_msgs::Joy::ConstPtr& msg)
 {
     // Map the input from the joystick message to our joystick state
@@ -118,15 +119,16 @@ int main(int argc, char **argv)
     ros::NodeHandle nh;
     ROS_INFO("Controller node has started.");
 
-    start_time = ros::Time::now();
+    // start_time = ros::Time::now();
     // ros::Timer timer = nh.createTimer(ros::Duration(0.01), robot_task);
 
     pub_controller = nh.advertise<msg_pkg::Controller>("Controller", 10);
     ros::Subscriber sub1 = nh.subscribe<sensor_msgs::Joy>("joy", 10,node_callback);
 
-    ros::MultiThreadedSpinner spinner(4);
-    spinner.spin();
-    return 0;
-    // ros::spin();
+    // ros::MultiThreadedSpinner spinner(4);
+    // spinner.spin();
+    // return 0;
+    ros::spin();
     // ros::Timer timer = nh.createTimer(ros::Duration(0.01), robot_loop);
+    return 0;
 }

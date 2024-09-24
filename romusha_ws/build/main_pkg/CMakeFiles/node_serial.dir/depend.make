@@ -59,6 +59,8 @@ main_pkg/CMakeFiles/node_serial.dir/src/node_serial/serial.cpp.o: /opt/ros/noeti
 main_pkg/CMakeFiles/node_serial.dir/src/node_serial/serial.cpp.o: /opt/ros/noetic/include/ros/wall_timer.h
 main_pkg/CMakeFiles/node_serial.dir/src/node_serial/serial.cpp.o: /opt/ros/noetic/include/ros/wall_timer_options.h
 main_pkg/CMakeFiles/node_serial.dir/src/node_serial/serial.cpp.o: /opt/ros/noetic/include/rosconsole/macros_generated.h
+main_pkg/CMakeFiles/node_serial.dir/src/node_serial/serial.cpp.o: /opt/ros/noetic/include/sensor_msgs/Joy.h
+main_pkg/CMakeFiles/node_serial.dir/src/node_serial/serial.cpp.o: /opt/ros/noetic/include/std_msgs/Header.h
 main_pkg/CMakeFiles/node_serial.dir/src/node_serial/serial.cpp.o: /opt/ros/noetic/include/xmlrpcpp/XmlRpcDecl.h
 main_pkg/CMakeFiles/node_serial.dir/src/node_serial/serial.cpp.o: /opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h
 main_pkg/CMakeFiles/node_serial.dir/src/node_serial/serial.cpp.o: /usr/local/include/libusbp-1/libusbp.h
